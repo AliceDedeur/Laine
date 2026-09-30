@@ -162,25 +162,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </div>
 
   <div>
-    <label for="peolte-eleveur">Eleveurs: *</label>
-    <select name="peolte-eleveur" id="peolte-eleveur" required value="<?= $values['peolte-eleveur'] ?>">
+    <label for="pelote-eleveur">Eleveurs: *</label>
+    <select name="pelote-eleveur" id="pelote-eleveur" required value="<?= $values['pelote-eleveur'] ?>">
       <option value=""> --- Sélectionner un éleveur --- </option>
       <?php foreach ($eleveurs as $eleveur) : ?>
         <option 
           value="<?= htmlspecialchars($eleveur["id"]) ?>"
-          <?= $values["peolte-eleveur"] === $eleveur["id"] ? 'selected' : '' ?>
+          <?= $values["pelote-eleveur"] === $eleveur["id"] ? 'selected' : '' ?>
         >
           <?= htmlspecialchars($eleveur["nom_ferme"]) ?>
         </option>
       <?php endforeach ?>
     </select>
-    <?php if (isset($errors['peolte-eleveur'])) : ?>
-      <span class="error"><?= $errors['peolte-eleveur'] ?></span>
+    <?php if (isset($errors['pelote-eleveur'])) : ?>
+      <span class="error"><?= $errors['pelote-eleveur'] ?></span>
     <?php endif ?>
   </div>
 
   <div>
-    <label for="pelote-stock">Prix:</label>
+    <label for="pelote-stock">Stock:</label>
     <input type="number" min="0" step="1" name="pelote-stock" id="pelote-stock" value="<?= $values['pelote-stock'] ?>">
     <?php if (isset($errors['pelote-stock'])) : ?>
       <span class="error"><?= $errors['pelote-stock'] ?></span>
