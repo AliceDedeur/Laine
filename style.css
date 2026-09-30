@@ -1,0 +1,156 @@
+
+:root{
+    --parchment: #f4f0eaff;
+    --muted-teal: #8ea088ff;
+    --bone: #d8cfb8ff;
+    --cinnamon-wood: #b86f52ff;
+    --camel: #b39258ff;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color:var(--cinnamon-wood);
+    background-color: var(--parchment);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: var(--muted-teal);
+}
+
+h2 {
+    color: var(--muted-teal);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--muted-teal);
+    border-radius: 12px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 20px 15px;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color:var(--parchment);
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: var(--camel);
+}
+
+.pelotes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.pelote-card {
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--parchment);
+    border: 0.5px solid var(--muted-teal);
+    box-shadow: 2px 2px 2px var(--camel);
+}
+
+.pelote-card h2 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.prix {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
+    color: var(--muted-teal);
+}
+
+.card-btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    text-align: center;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--muted-teal);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #5c4d42;
+    border: 1px solid var(--muted-teal);
+}
+
+.card-admin {
+    background-color: var(--bone);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+
+.card-admin a {
+    color: var(--muted-teal);
+    font-size: .8rem;
+    border: 1px solid var(--parchment);
+}
+
+.admin-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+table{
+    border: 1px solid #5c4d42;
+    background-color: #f3e9e0;
+}
+
+th, td{
+    border: 1px solid #5c4d42;
+}
+
+
